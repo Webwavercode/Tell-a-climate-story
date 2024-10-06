@@ -1,28 +1,22 @@
 import streamlit as st
-from streamlit_jupyter import StreamlitPatcher, tqdm
-
-# Patch Streamlit to work with Jupyter Notebook
-StreamlitPatcher().jupyter()
-
-# Rest of your code remains the same
 import plotly.express as px
 import pandas as pd
 
-@st.cache_data
+
 def get_data(file_name):
     return pd.read_csv(file_name)
 
-@st.cache_data
+
 def get_co_data(): 
     file_name = "co-emissions-per-capita.csv"
     return get_data(file_name)
 
-@st.cache_data
+
 def get_methane_data():
     file_name = "per-capita-methane-emissions.csv"
     return get_data(file_name)
 
-@st.cache_data
+
 def get_nitrous_oxide_data():
     file_name = "per-capita-nitrous-oxide.csv"
     return get_data(file_name)
