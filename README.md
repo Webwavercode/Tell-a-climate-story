@@ -44,7 +44,7 @@ To tell a climate change story backed by data from the **U.S. GHG Center**, and 
 
 ## 🚀 How to Run Locally
 
-```bash
+``bash
 git clone https://github.com/Webwavercode/Tell-a-climate-story
 cd Tell-a-climate-story
 pip install -r requirements.txt
